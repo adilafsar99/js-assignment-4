@@ -6,14 +6,14 @@ var iftarTimes = ["18:54", "18:55", "18:55", "18:56", "18:56", "18:57", "18:57",
 
 var userDate = prompt("Enter a date to see its Sehar and Iftaar time: (e.g. 15)");
 while ((userDate < 1 || userDate > 30) || (userDate === null || userDate === "")) {
-				if (userDate === null || userDate === "") {
-				   alert("Not Allowed!");
-				   userDate = prompt("Enter a date to see its Sehar and Iftaar time: (e.g. 15)");
-   }
-   else if (userDate < 1 || userDate > 30) {
-				   alert("Please enter a valid date!");
-				   userDate = prompt("Enter a date to see its Sehar and Iftaar time: (e.g. 15)");
-   }
+	if (userDate === null || userDate === "") {
+	   alert("Not Allowed!");
+	   userDate = prompt("Enter a date to see its Sehar and Iftaar time: (e.g. 15)");
+       }
+       else if (userDate < 1 || userDate > 30) {
+	   alert("Please enter a valid date!");
+	   userDate = prompt("Enter a date to see its Sehar and Iftaar time: (e.g. 15)");
+       }
 }
 userDate = --userDate;
 document.write("<table>")
